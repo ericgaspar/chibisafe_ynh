@@ -1,1 +1,2 @@
-This is a dummy description of this app features
+chibisafe is a performant vault to save all your files in the cloud.
+
