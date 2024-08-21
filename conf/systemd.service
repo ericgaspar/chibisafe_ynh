@@ -10,7 +10,6 @@ EnvironmentFile=__INSTALL_DIR__/.env
 WorkingDirectory=__INSTALL_DIR__/
 Environment="__YNH_NODE_LOAD_PATH__
 Environment="NODE_ENV=production"
-ExecStart=__YNH_NODE__
 ExecStart=__YNH_NODE__ run start
 Restart=always
 
