@@ -14,9 +14,7 @@ maintainers = []
 [upstream]
 license = "MIT"
 website = "https://chibisafe.app/"
-demo = "https://demo.example.com"
 admindoc = "https://yunohost.org/packaging_apps"
-userdoc = "https://yunohost.org/apps"
 code = "https://github.com/chibisafe/chibisafe"
 
 [integration]
