@@ -42,6 +42,7 @@ ynh_script_progression --message="Building app... (this will take some time and 
 
 pushd "$install_dir"
 	ynh_use_nodejs
+    ynh_exec_warn_less env $ynh_node_load_PATH corepack enable && COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack prepare pnpm@latest --activate
 	ynh_exec_warn_less ynh_exec_as "$app" env "$ynh_node_load_PATH" yarn install
 	ynh_exec_warn_less ynh_exec_as "$app" env "$ynh_node_load_PATH" yarn workspace @chibisafe/backend generate
 	ynh_exec_warn_less ynh_exec_as "$app" env "$ynh_node_load_PATH" yarn workspace @chibisafe/backend migrate
