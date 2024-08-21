@@ -8,8 +8,13 @@ User=__APP__
 Group=__APP__
 EnvironmentFile=__INSTALL_DIR__/.env
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=/usr/bin/yarn run start
+Environment="__YNH_NODE_LOAD_PATH__
+Environment="NODE_ENV=production"
+ExecStart=__YNH_NODE__
+ExecStart=__YNH_NODE__ run start
 Restart=always
+
+#/usr/bin/yarn
 
 ### Depending on specificities of your service/app, you may need to tweak these
 ### .. but this should be a good baseline
